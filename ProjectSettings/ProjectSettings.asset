@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: InesDoreau
   productName: PortalVR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -125,7 +125,10 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -5089643327518346595, guid: 958ffe18487759d4db7a8ead23ae720c, type: 2}
+  - {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0, type: 2}
+  - {fileID: 11400000, guid: 97af243309e8ee74caeff8bb552c0695, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -172,7 +175,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
@@ -314,7 +317,7 @@ PlayerSettings:
     m_GraphicsJobMode: 0
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: AndroidPlayer
-    m_APIs: 150000000b000000
+    m_APIs: 0b000000
     m_Automatic: 0
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000
@@ -663,6 +666,6 @@ PlayerSettings:
   projectName: 
   organizationId: 
   cloudEnabled: 0
-  enableNativePlatformBackendsForNewInputSystem: 0
+  enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 0
   legacyClampBlendShapeWeights: 0

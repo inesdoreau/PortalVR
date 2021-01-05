@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Logo Efrei Start.unity
+    guid: 3c1051a0b1e8e1f4f8573c30a7e89737
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 541c28026a9343e4bab5e074aed172ea
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: ac846ed2fd04d1344b0298e6a502a198
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3d36b094c7e90a48bfeecc8253553a0,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 97af243309e8ee74caeff8bb552c0695,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 958ffe18487759d4db7a8ead23ae720c,
+      type: 2}
