@@ -2,28 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game : MonoBehaviour
+public class CreateBox : MonoBehaviour
 {
     public Transform spawnPoint;
-    public Transform endPoint;
+    public Transform box;
 
-    public GameObject box;
 
-    // Start is called before the first frame update
-    void Start()
+    public void AddBox()
     {
-       
+        Destroy(GameObject.FindGameObjectWithTag("PortalBox"));
+        Instantiate(box, spawnPoint.position, Quaternion.identity);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        box.gameObject.transform.position = spawnPoint.position;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

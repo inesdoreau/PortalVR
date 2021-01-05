@@ -4,14 +4,36 @@ using UnityEngine;
 
 public class TeleportPortal : MonoBehaviour
 {
-    public Transform spawnPoint;
+    public Transform linkedPortal;
 
+    private bool portalActive = true;
 
-
-    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.transform.position = spawnPoint.position;
+        if (portalActive)
+        {
+            linkedPortal.GetComponent<TeleportPortal>().Toggle();
+
+            float xRot = other.transform.rotation.x;
+            float zRot = other.transform.rotation.y;
+
+            other.transform.SetPositionAndRotation(linkedPortal.transform.position, Quaternion.identity);
+            other.transform.rotation = linkedPortal.transform.parent.transform.rotation;
+
+            float yRot = other.transform.eulerAngles.y;
+
+            other.transform.eulerAngles = new Vector3(xRot, yRot, zRot);
+
+        }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        Toggle();
+    }
+
+    public void Toggle()
+    {
+        portalActive = !portalActive;
+    }
 }

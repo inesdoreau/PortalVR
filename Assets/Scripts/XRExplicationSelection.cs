@@ -16,6 +16,9 @@ public class XRExplicationSelection : MonoBehaviour
     private GameObject explication3;
 
     [SerializeField]
+    private GameObject portalGun;
+
+    [SerializeField]
     private Button next1;
 
     [SerializeField]
@@ -35,6 +38,7 @@ public class XRExplicationSelection : MonoBehaviour
     void Start()
     {
         startButton.gameObject.SetActive(false);
+        portalGun.gameObject.SetActive(false);
 
         next1.onClick.AddListener(() =>
         {
@@ -55,6 +59,7 @@ public class XRExplicationSelection : MonoBehaviour
             explication1.gameObject.SetActive(false);
             explication2.gameObject.SetActive(false);
             explication3.gameObject.SetActive(false);
+            portalGun.gameObject.SetActive(true);
             startButton.gameObject.SetActive(true);
         });
     }
